@@ -7,9 +7,11 @@ namespace repo_practice
     {
         static void Main(string[] args)
         {
+           
             Repositories.EmployeeRepository emp_obj = new Repositories.EmployeeRepository();
             Repositories.ItemRepository item_r = new Repositories.ItemRepository();
 
+            // Make new connection 
             emp_obj.MakeNewConnection();
             item_r.MakeNewConnection();
 
@@ -47,19 +49,19 @@ namespace repo_practice
              item_r.Update(model_i);*/
 
             //Retrieve one data
-            /*
-                        List<string> result_i = item_r.GetById(model_i, 1);
-                        foreach (var item in result_i)
-                        {
-                            Console.WriteLine(item);
-                        }
 
-                        Console.WriteLine("-------------------------");
-                        List<string> result_e = emp_obj.GetById(model_e, 251660114);
-                        foreach (var item in result_e)
-                        {
-                            Console.WriteLine(item);
-                        }*/
+            /*List<string> result_i = item_r.GetById(model_i, 1);
+            foreach (var item in result_i)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("-------------------------");
+            List<string> result_e = emp_obj.GetById(model_e, 251660114);
+            foreach (var item in result_e)
+            {
+                Console.WriteLine(item);
+            }*/
 
             //Retrieve All data
 
